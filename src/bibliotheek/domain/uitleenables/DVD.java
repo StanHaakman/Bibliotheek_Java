@@ -1,8 +1,8 @@
 package bibliotheek.domain.uitleenables;
 
-import bibliotheek.domain.Uitleenables;
+import bibliotheek.domain.Artikelen;
 
-public class DVD implements Uitleenables {
+public class DVD implements Artikelen {
     @Override
     public void uitlenen() {
 

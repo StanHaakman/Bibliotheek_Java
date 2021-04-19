@@ -1,6 +1,6 @@
 package bibliotheek.domain;
 
-public interface Uitleenables {
+public interface Artikelen {
     void uitlenen();
 
     void inleveren();
