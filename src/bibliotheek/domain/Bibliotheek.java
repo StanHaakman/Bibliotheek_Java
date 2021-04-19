@@ -33,4 +33,13 @@ public class Bibliotheek {
     public void verwijderenUitPersonen(Persoon persoon) {
 
     }
+
+    @Override
+    public String toString() {
+        return "Bibliotheek{" +
+                "naam='" + naam + '\'' +
+                ", artikelen=" + artikelen +
+                ", personen=" + personen +
+                '}';
+    }
 }
