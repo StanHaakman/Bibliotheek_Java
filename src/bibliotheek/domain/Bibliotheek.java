@@ -16,7 +16,21 @@ public class Bibliotheek {
         return naam;
     }
 
-    public void setPersonen(List<Persoon> personen) {
-        this.personen = personen;
+    public void toevoegenAanArtikelen(Artikelen artikel) {
+
+    }
+
+//    Mogelijke uitbreiding
+    public void verwijderenUitArtikelen(Artikelen artikel) {
+
+    }
+
+    public void toevoegenAanPersonen(Persoon persoon) {
+
+    }
+
+    //    Mogelijke uitbreiding
+    public void verwijderenUitPersonen(Persoon persoon) {
+
     }
 }
