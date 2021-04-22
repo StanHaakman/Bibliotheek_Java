@@ -17,29 +17,35 @@ public class Bibliotheek {
     }
 
     public void toevoegenAanArtikelen(Artikelen artikel) {
-
+        artikelen.add(artikel);
     }
 
 //    Mogelijke uitbreiding
     public void verwijderenUitArtikelen(Artikelen artikel) {
-
+        artikelen.remove(artikel);
     }
 
     public void toevoegenAanPersonen(Persoon persoon) {
-
+        personen.add(persoon);
     }
 
     //    Mogelijke uitbreiding
     public void verwijderenUitPersonen(Persoon persoon) {
-
+        personen.remove(persoon);
     }
 
     @Override
     public String toString() {
-        return "Bibliotheek{" +
-                "naam='" + naam + '\'' +
-                ", artikelen=" + artikelen +
-                ", personen=" + personen +
-                '}';
+        return "\n" +
+                "Bibliotheek {" +
+                "\n" +
+                "Naam: '" + naam + '\'' +
+                "," +
+                "\n\n" +
+                "Artikelen: " + artikelen +
+                "\n\n" +
+                "Personen: " + personen +
+                "\n" +
+                "}";
     }
 }

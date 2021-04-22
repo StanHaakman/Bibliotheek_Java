@@ -1,18 +1,18 @@
 package bibliotheek.domain.uitleenables;
 
 import bibliotheek.domain.Artikelen;
+import bibliotheek.domain.Klant;
 
 public class DVD implements Artikelen {
     private final String titel;
     private final String regisseur;
     private final int releaseJaar;
-    private boolean isUitgeleend;
+    private boolean isUitgeleend = false;
 
-    public DVD(String titel, String regisseur, int releaseJaar, boolean isUitgeleend) {
+    public DVD(String titel, String regisseur, int releaseJaar) {
         this.titel = titel;
         this.regisseur = regisseur;
         this.releaseJaar = releaseJaar;
-        this.isUitgeleend = isUitgeleend;
     }
 
     public String getTitel() {
@@ -38,12 +38,12 @@ public class DVD implements Artikelen {
     }
 
     @Override
-    public void uitlenen() {
+    public void uitlenen(Klant klant) {
 
     }
 
     @Override
-    public void inleveren() {
+    public void inleveren(Klant klant) {
 
     }
 

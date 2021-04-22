@@ -1,9 +1,9 @@
 package bibliotheek.domain;
 
 public interface Artikelen {
-    void uitlenen();
+    void uitlenen(Klant klant);
 
-    void inleveren();
+    void inleveren(Klant klant);
 
     boolean isUitgeleend();
 }
