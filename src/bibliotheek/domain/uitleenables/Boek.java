@@ -29,14 +29,18 @@ public class Boek implements Artikelen {
 
     @Override
     public void uitlenen(Klant klant) {
-        this.isUitgeleend = true;
-        klant.artikelToevoegen(this);
+        if (!isUitgeleend){
+            klant.artikelToevoegen(this);
+            this.isUitgeleend = true;
+        }
     }
 
     @Override
     public void inleveren(Klant klant) {
-        this.isUitgeleend = false;
-        klant.artikelVerwijderen(this);
+        if (isUitgeleend) {
+            klant.artikelVerwijderen(this);
+            this.isUitgeleend = false;
+        }
     }
 
     @Override

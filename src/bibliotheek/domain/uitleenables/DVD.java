@@ -39,12 +39,18 @@ public class DVD implements Artikelen {
 
     @Override
     public void uitlenen(Klant klant) {
-
+        if (!isUitgeleend){
+            klant.artikelToevoegen(this);
+            this.isUitgeleend = true;
+        }
     }
 
     @Override
     public void inleveren(Klant klant) {
-
+        if (isUitgeleend) {
+            klant.artikelVerwijderen(this);
+            this.isUitgeleend = false;
+        }
     }
 
     @Override
