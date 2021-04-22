@@ -17,7 +17,9 @@ public class Bibliotheek {
     }
 
     public void verwijderenUitArtikelen(Artikelen artikel) {
-        artikelen.remove(artikel);
+        if (!artikel.isUitgeleend()) {
+            artikelen.remove(artikel);
+        }
     }
 
     public void toevoegenAanPersonen(Persoon persoon) {

@@ -33,7 +33,7 @@ public class DVD implements Artikelen {
 
     @Override
     public boolean isUitgeleend() {
-        return false;
+        return isUitgeleend;
     }
 
     @Override
