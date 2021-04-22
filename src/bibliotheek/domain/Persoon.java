@@ -8,10 +8,6 @@ public class Persoon {
         return naam;
     }
 
-    public int getLeeftijd() {
-        return leeftijd;
-    }
-
     public Persoon(String naam, int leeftijd) {
         this.naam = naam;
         this.leeftijd = leeftijd;
