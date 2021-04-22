@@ -7,24 +7,12 @@ public class Boek implements Artikelen {
     private final String titel;
     private final String auteur;
     private final int publicatieJaar;
-    private boolean isUitgeleend = false;
+    private boolean isUitgeleend;
 
     public Boek(String titel, String auteur, int publicatieJaar) {
         this.titel = titel;
         this.auteur = auteur;
         this.publicatieJaar = publicatieJaar;
-    }
-
-    public String getTitel() {
-        return titel;
-    }
-
-    public String getAuteur() {
-        return auteur;
-    }
-
-    public int getPublicatieJaar() {
-        return publicatieJaar;
     }
 
     @Override

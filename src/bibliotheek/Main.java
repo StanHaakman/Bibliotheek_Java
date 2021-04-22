@@ -84,9 +84,11 @@ public class Main {
 
         philosophersStone2.uitlenen(p2);
 
+        philosophersStone.uitlenen(p3);
         percyJackson.uitlenen(p3);
 
         System.out.println(p1);
         System.out.println(p2);
+        System.out.println(p3);
     }
 }

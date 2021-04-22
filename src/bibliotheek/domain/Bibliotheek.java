@@ -12,15 +12,10 @@ public class Bibliotheek {
         this.naam = naam;
     }
 
-    public String getNaam() {
-        return naam;
-    }
-
     public void toevoegenAanArtikelen(Artikelen artikel) {
         artikelen.add(artikel);
     }
 
-//    Mogelijke uitbreiding
     public void verwijderenUitArtikelen(Artikelen artikel) {
         artikelen.remove(artikel);
     }
@@ -29,7 +24,6 @@ public class Bibliotheek {
         personen.add(persoon);
     }
 
-    //    Mogelijke uitbreiding
     public void verwijderenUitPersonen(Persoon persoon) {
         personen.remove(persoon);
     }

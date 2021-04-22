@@ -7,34 +7,12 @@ public class DVD implements Artikelen {
     private final String titel;
     private final String regisseur;
     private final int releaseJaar;
-    private boolean isUitgeleend = false;
+    private boolean isUitgeleend;
 
     public DVD(String titel, String regisseur, int releaseJaar) {
         this.titel = titel;
         this.regisseur = regisseur;
         this.releaseJaar = releaseJaar;
-    }
-
-    public String getTitel() {
-        return titel;
-    }
-
-    public String getRegisseur() {
-        return regisseur;
-    }
-
-    public int getReleaseJaar() {
-        return releaseJaar;
-    }
-
-    @Override
-    public String toString() {
-        return "DVD{" +
-                "titel='" + titel + '\'' +
-                ", regisseur='" + regisseur + '\'' +
-                ", releaseJaar=" + releaseJaar +
-                ", isUitgeleend=" + isUitgeleend +
-                '}';
     }
 
     @Override
@@ -56,5 +34,15 @@ public class DVD implements Artikelen {
     @Override
     public boolean isUitgeleend() {
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "\nDVD { " +
+                "Titel:'" + titel + ",\n" +
+                "Regisseur: '" + regisseur + '\'' +
+                ", Release jaar: " + releaseJaar +
+                ",\nMomenteel uitgeleend? " + (isUitgeleend ? "Ja": "Nee") +
+                '}';
     }
 }
