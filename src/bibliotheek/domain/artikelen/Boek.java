@@ -1,18 +1,18 @@
-package bibliotheek.domain.uitleenables;
+package bibliotheek.domain.artikelen;
 
 import bibliotheek.domain.Artikelen;
 import bibliotheek.domain.Klant;
 
-public class DVD implements Artikelen {
+public class Boek implements Artikelen {
     private final String titel;
-    private final String regisseur;
-    private final int releaseJaar;
+    private final String auteur;
+    private final int publicatieJaar;
     private boolean isUitgeleend;
 
-    public DVD(String titel, String regisseur, int releaseJaar) {
+    public Boek(String titel, String auteur, int publicatieJaar) {
         this.titel = titel;
-        this.regisseur = regisseur;
-        this.releaseJaar = releaseJaar;
+        this.auteur = auteur;
+        this.publicatieJaar = publicatieJaar;
     }
 
     @Override
@@ -38,11 +38,13 @@ public class DVD implements Artikelen {
 
     @Override
     public String toString() {
-        return "\nDVD { " +
-                "Titel:'" + titel + ",\n" +
-                "Regisseur: '" + regisseur + '\'' +
-                ", Release jaar: " + releaseJaar +
-                ",\nMomenteel uitgeleend? " + (isUitgeleend ? "Ja": "Nee") +
-                '}';
+        return "\nBoek { " +
+                "Titel: " + titel +
+                ",\n" +
+                "Geschreven door: " + auteur +
+                ", Gepubliceerd in: " + publicatieJaar +
+                ",\n" +
+                "Momenteel uitgeleend? " + (isUitgeleend ? "Ja": "Nee") +
+                " }";
     }
 }

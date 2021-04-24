@@ -2,8 +2,8 @@ package bibliotheek;
 
 import bibliotheek.domain.Bibliotheek;
 import bibliotheek.domain.Klant;
-import bibliotheek.domain.uitleenables.Boek;
-import bibliotheek.domain.uitleenables.DVD;
+import bibliotheek.domain.artikelen.Boek;
+import bibliotheek.domain.artikelen.DVD;
 
 
 public class Main {
